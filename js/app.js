@@ -51,11 +51,27 @@ angular.module('ionicApp', ['ionic'])
            }
        }
    })
-    .state('menu.prodlis', {
+    .state('menu.tabs.prodlis', {
         url: "/prodlis",
       views: {
-          'menuContent': {
+          'list-tab': {
             templateUrl: "prodlis.html"
+        }
+      }
+    })
+	.state('menu.tabs.prod1', {
+        url: "/prod1",
+      views: {
+          'list-tab': {
+            templateUrl: "prod1.html"
+        }
+      }
+    })
+	.state('menu.tabs.prod2', {
+        url: "/prod2",
+      views: {
+          'list-tab': {
+            templateUrl: "prod2.html"
         }
       }
     })

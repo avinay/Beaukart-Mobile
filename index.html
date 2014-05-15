@@ -14,7 +14,7 @@
 
   <style>
      
-      .bar.bar-positive, .tabs-positive>.tabs, .tabs.tabs-positive{border-color:#dc1e32;background-color:#dc1e32;background-image:linear-gradient(0deg,#dc1e32,#dc1e32 50%,transparent 50%);color:#fff}
+      .bar.bar-positive, .tabs-positive>.tabs, .tabs.tabs-positive{border-color:#f15857;background-color:#f15857;background-image:linear-gradient(0deg,#f15857,#f15857 50%,transparent 50%);color:#fff}
       
       body{font-family: 'Nunito', sans-serif;}
       .box {height:300px;padding: 10px}
@@ -33,13 +33,13 @@
           display:block;
           text-align:center;
           vertical-align:middle;
-          color:#3498db;
+          color:#f1c40f;
           text-decoration:none;
-          font-size:15px;
-          padding-top:75px;
+          font-size:18px;
+          padding-top:160px;
           padding-bottom:10px;
           border:1px solid #dddddd;
-          border-radius:5px;
+         
           box-shadow:1px 1px 1px #ddd;
           
       }
@@ -60,41 +60,25 @@
       {
           clear:both;
       }
-      .calcimg
+      .sareesimg
       {
-        background:#ffffff url(images/calc.png) no-repeat center 10px; 
+        background:#ffffff url(images/sarees1.png) no-repeat center 0px; 
       }
-      .bookimg
+      .lengasimg
       {
-        background:#ffffff url(images/bookshelf.png) no-repeat center 10px; 
+        background:#ffffff url(images/lengas.png) no-repeat center 0px; 
       }
-      .tagimg
+      .suitesimg
       {
-        background:#ffffff url(images/tag.png) no-repeat center 10px; 
+        background:#ffffff url(images/suites.png) no-repeat center 0px; 
       }
-      .mapimg
+      .kurtisimg
       {
-        background:#ffffff url(images/map.png) no-repeat center 10px; 
-      }
-      .rocketimg
-      {
-        background:#ffffff url(images/rocket.png) no-repeat center 10px; 
-      }
-      .storeimg
-      {
-        background:#ffffff url(images/store.png) no-repeat center 10px; 
-      }
-       .piggyimg
-      {
-        background:#ffffff url(images/piggy.png) no-repeat center 10px; 
-      }
-       .backpackimg
-      {
-        background:#ffffff url(images/backpack.png) no-repeat center 10px; 
+        background:#ffffff url(images/kurtis.png) no-repeat center 0px; 
       }
       .bgimg
       {
-         background:#dddddd url(images/bgimg.png) no-repeat;   
+         background:#dddddd url(images/bgimg2.png) no-repeat;   
       }
       .item
       {
@@ -209,9 +193,8 @@
         <ion-content>
           <ul class="list">
             <a href="#/menu/tab/buttons" class="item" menu-toggle="left">Home</a>
-            <a href="#/menu/keyboard" class="item" menu-toggle="left">Category List</a>
-            <a href="#/menu/slidebox" class="item" menu-toggle="left">Store Location</a>
-            <a href="#/menu/prodlis" class="item" menu-toggle="left">Product List</a>
+            <a href="#/menu/tab/list" class="item" menu-toggle="left">Category List</a>
+            <a href="#/menu/tab/exedash" class="item" menu-toggle="left">Store Location</a>
             <a href="#/menu/about" class="item" menu-toggle="left">About Us</a>
           </ul>
         </ion-content>
@@ -228,7 +211,6 @@
     <ion-nav-bar class="bar-positive">
         <ion-nav-back-button class="button-icon ion-arrow-left-c">
         </ion-nav-back-button>
-
         <ion-nav-buttons side="left">
           <button class="button button-icon button-clear ion-navicon" ng-click="toggleLeft()"></button>
         </ion-nav-buttons>
@@ -259,29 +241,24 @@
   </script>
 
   <script id="buttons.html" type="text/ng-template">
-    <ion-view title="TCO Mobile App">
+    <ion-view title="Beaukart">
       <ion-content class="padding bgimg">
         <p class="desc"><img src="images/logo3.png" /></p>
        
        
         <div class="prodblk">
-            <a class="prodlink calcimg"  href="#/menu/tab/form">BCC Calculator</a>
+            <a class="prodlink sareesimg"  href="#/menu/tab/list">Sarees</a>
         </div>
         <div class="prodblk">
-            <a class="prodlink bookimg"  href="#/menu/tab/form">Product 2</a>
+            <a class="prodlink lengasimg"  href="#/menu/tab/list">Lehenge</a>
         </div>
         <div class="prodblk">
-            <a class="prodlink tagimg"  href="#/menu/tab/form">Product 3</a>
+            <a class="prodlink suitesimg"  href="#/menu/tab/list">Salwar Suits</a>
         </div>
         <div class="prodblk">
-            <a class="prodlink mapimg"  href="#/menu/tab/form">Product 4</a>
+            <a class="prodlink kurtisimg"  href="#/menu/tab/list">Kurtis</a>
         </div>
-        <div class="prodblk">
-            <a class="prodlink storeimg"  href="#/menu/tab/form">Product 4</a>
-        </div>
-        <div class="prodblk">
-            <a class="prodlink rocketimg"  href="#/menu/tab/form">Product 4</a>
-        </div>
+        
         
         <div class="clear"></div>
         <p>
@@ -353,38 +330,38 @@
 
 
   <script id="list.html" type="text/ng-template">
-    <ion-view title="List Nav">
+    <ion-view title="Categories">
       <ion-content class="padding bgimg">
          <div class="list">
           <div class="item item-divider">
-           Categories
+           Sarees
           </div> 
       <div class="list">
-        <a name="listview" class="item item-thumbnail-left" href="#/menu/prodlis">
-          <img src="images/backpack.png">
-          <h2>Pretty Hate Machine</h2>
-          <p>Nine Inch Nails</p>
+        <a name="listview" class="item item-thumbnail-left" href="#/menu/tab/prodlis">
+          <img src="images/sarees_bolly.png">
+          <h2>Bollywood Style</h2>
+          <p>Descrition for categories</p>
        </a>
      </div>
       <div class="list">
         <a class="item item-thumbnail-left" href="#/menu/tab/prodlis">
-          <img src="images/backpack.png">
-          <h2>Pretty Hate Machine</h2>
-          <p>Nine Inch Nails</p>
+          <img src="images/sarees_des.png">
+          <h2>Designer Saree</h2>
+          <p>Descrition for categories</p>
        </a>
      </div>
       <div class="list">
         <a class="item item-thumbnail-left" href="#/menu/tab/prodlis">
-          <img src="images/backpack.png">
-          <h2>Pretty Hate Machine</h2>
-          <p>Nine Inch Nails</p>
+          <img src="images/sarees_part.png">
+          <h2>Party Wear Saree</h2>
+          <p>Descrition for categories</p>
        </a>
      </div>
       <div class="list">
         <a class="item item-thumbnail-left" href="#/menu/tab/prodlis">
-          <img src="images/backpack.png">
-          <h2>Pretty Hate Machine</h2>
-          <p>Nine Inch Nails</p>
+          <img src="images/sarees_wed.png">
+          <h2>Party Wear Saree</h2>
+          <p>Descrition for categories</p>
        </a>
      </div>
 
@@ -401,29 +378,109 @@
       <ion-content class="padding bgimg">
         <div class="list">
           <div class="item item-divider">
-            Candy Bars
+            Bollywood Style Sarees
           </div>
-         <a class="item" href="#">Butterfinger</a>
-         <a class="item" href="#">Butterfinger</a>
-         <a class="item" href="#">Butterfinger</a>
-         <a class="item" href="#">Butterfinger</a>
-         <a class="item" href="#">Butterfinger</a>
-         <div class="list">
+			 <a class="item" href="#/menu/tab/prod1">India Ka Sanskriti Wala Style</a>
+			 <a class="item" href="#/menu/tab/prod2">Vivacious pink lehenga choli</a>
+			 <a class="item" href="#/menu/tab/prod1">India Ka Filmy Wala Style</a>
+			 <a class="item" href="#/menu/tab/prod2">Ethnic off white & pink lehenga choli</a>
+	     <div class="list">
           <div class="item item-divider">
             Candy Bars
           </div>
-         <a class="item" href="#">Butterfinger</a>
-         <a class="item" href="#">Butterfinger</a>
-         <a class="item" href="#">Butterfinger</a>
-         <a class="item" href="#">Butterfinger</a>
-         <a class="item" href="#">Butterfinger</a>
+         <a class="item" href="#/menu/tab/prod1">India Ka Sanskriti Wala Style</a>
+			 <a class="item" href="#/menu/tab/prod2">Vivacious pink lehenga choli</a>
+			 <a class="item" href="#/menu/tab/prod1">India Ka Filmy Wala Style</a>
+			 <a class="item" href="#/menu/tab/prod2">Ethnic off white & pink lehenga choli</a>
 
        </div>
         
       </ion-content>
     </ion-view>
   </script>
-    
+  
+  <script id="prod1.html" type="text/ng-template">
+    <ion-view>
+      <ion-header-bar class="bar-positive">
+          <button class="button button-icon button-clear ion-navicon" ng-click="toggleLeft()"></button>
+          <h1 class="title">India Ka Sanskriti Wala Style</h1>
+      </ion-header-bar>
+      
+      <ion-content class="padding bgimg">
+        <ion-slide-box>
+          <ion-slide>
+            <div class="box">
+                <img src="images/prod1.png" />
+            </div>
+          </ion-slide>
+          <ion-slide>
+            <div class="box">
+                <img src="images/prod2.png" />
+            </div>
+          </ion-slide>
+          <ion-slide>
+            <div class="box">
+                <img src="images/prod3.png" />
+            </div>
+          </ion-slide>
+        </ion-slide-box>
+        <div class="list proddesc">
+          <div class="item item-divider">
+            <span class="input-label">Product Description</span>
+          </div>
+          <p>Fabric-Chiffon Unstiched Anarkali Suit, Stichable upto size 42</p>
+          <p>Dupatta: 2.5meters Top: 54 inches Bottom: 2meters</p>
+          <p><button class="button button-balanced">
+             Order Now!
+          </button></p>
+
+        </div>
+
+       </ion-content>    
+    </ion-view>
+  </script>  
+  
+  <script id="prod2.html" type="text/ng-template">
+    <ion-view>
+      <ion-header-bar class="bar-positive">
+          <button class="button button-icon button-clear ion-navicon" ng-click="toggleLeft()"></button>
+          <h1 class="title">Vivacious pink lehenga choli</h1>
+      </ion-header-bar>
+      
+      <ion-content class="padding bgimg">
+        <ion-slide-box>
+          <ion-slide>
+            <div class="box">
+                <img src="images/prod4.png" />
+            </div>
+          </ion-slide>
+          <ion-slide>
+            <div class="box">
+               <img src="images/prod5.png" />
+            </div>
+          </ion-slide>
+          <ion-slide>
+            <div class="box">
+               <img src="images/prod6.png" />
+            </div>
+          </ion-slide>
+        </ion-slide-box>
+        <div class="list proddesc">
+          <div class="item item-divider">
+            <span class="input-label">Product Description</span>
+          </div>
+          <p>Fabric-Chiffon Unstiched Anarkali Suit, Stichable upto size 42</p>
+          <p>Dupatta: 2.5meters Top: 54 inches Bottom: 2meters</p>
+          <p><button class="button button-balanced">
+             Order Now!
+          </button></p>
+
+        </div>
+
+       </ion-content>    
+    </ion-view>
+  </script>
+  
   <script id="slidebox.html" type="text/ng-template">
     <ion-view>
       <ion-header-bar class="bar-positive">
@@ -525,7 +582,7 @@
             <h3>About Beaukart</h3>
             <p>www.beaukart.com is a marketplace of boutiques/independent designers who want to promote and sell their unique designs online.</p>
             <h4>What is a marketplace:</h4>
-            <p>A place where anyone can sell fashion to anyone in the world and our platform fecilitates you in that. It's a unique marketplace where you can discover various latest and amazing designs from some amazingly creative designers.</p>
+            <p>A place where anyone can sell fashion to anyone in the world and our platform fecilitates you in that. Its a unique marketplace where you can discover various latest and amazing designs from some amazingly creative designers.</p>
             <p> <a href="http://www.beaukart.com" target="_blank">www.beaukart.com</a> is a platform where you can easily discover creative and fresh designs from anywhere in India.</p>
           </div>    
         </ion-content>
