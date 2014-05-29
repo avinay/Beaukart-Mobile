@@ -55,7 +55,16 @@ angular.module('ionicApp', ['ionic'])
         url: "/prodlis",
       views: {
           'list-tab': {
-            templateUrl: "prodlis.html"
+            templateUrl: "prodlis.html",
+			controller: 'dataCtrl'
+        }
+      }
+    })
+	.state('menu.tabs.prodlis1', {
+        url: "/prodlis1",
+      views: {
+          'list-tab': {
+            templateUrl: "prodlis1.html"
         }
       }
     })
@@ -64,6 +73,7 @@ angular.module('ionicApp', ['ionic'])
       views: {
           'list-tab': {
             templateUrl: "prod1.html"
+			
         }
       }
     })
@@ -203,6 +213,32 @@ angular.module('ionicApp', ['ionic'])
   $scope.nextSlide = function() {
     $ionicSlideBoxDelegate.next();
   }             
+}) 
+
+.controller('dataCtrl', function($scope) {
+  
+  Parse.initialize("xJecl7wfn75gJngmLqt41D08I4JhM82oWJ4IY50O", "kIR9rHnAHkgfL1jJhozNpQSoPH8xD4wY3LVcUI0k");
+  var User = Parse.Object.extend("beaukart");
+
+  function getTodos() {
+	  //alert("ss");
+    var query = new Parse.Query(User);
+    query.find({
+      success: function(results) {
+        $scope.$apply(function() {
+          $scope.users = results.map(function(obj) {
+            return {username: obj.get("prod_name"), email: obj.get("prod_category"), parseObject: obj};
+          });
+        });
+      },
+      error: function(error) {
+        alert("Error: " + error.code + " " + error.message);
+      }
+    });
+  }
+
+  getTodos();
+  
 })              
 
 .controller('MenuCtrl', function($scope, $ionicSideMenuDelegate, $ionicModal) {
