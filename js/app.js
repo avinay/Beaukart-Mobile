@@ -35,6 +35,22 @@ angular.module('ionicApp', ['ionic'])
         }
       }
     })
+	.state('menu.tabs.lehenges', {
+      url: "/lehenges",
+      views: {
+        'list-tab': {
+          templateUrl: "lehenges.html"
+        }
+      }
+    })
+	.state('menu.tabs.salwars', {
+      url: "/salwars",
+      views: {
+        'list-tab': {
+          templateUrl: "salwars.html"
+        }
+      }
+    })
     .state('menu.tabs.item', {
       url: "/item",
       views: {
@@ -60,6 +76,22 @@ angular.module('ionicApp', ['ionic'])
         }
       }
     })
+	.state('menu.tabs.lehengas1', {
+        url: "/lehengas1",
+      views: {
+          'list-tab': {
+            templateUrl: "lehengas1.html"
+        }
+      }
+    })
+	.state('menu.tabs.salwars1', {
+        url: "/salwars1",
+      views: {
+          'list-tab': {
+            templateUrl: "salwars1.html"
+        }
+      }
+    })
 	.state('menu.tabs.prodlis1', {
         url: "/prodlis1",
       views: {
@@ -82,6 +114,63 @@ angular.module('ionicApp', ['ionic'])
       views: {
           'list-tab': {
             templateUrl: "prod2.html"
+        }
+      }
+    })
+	.state('menu.tabs.prod3', {
+        url: "/prod3",
+      views: {
+          'list-tab': {
+            templateUrl: "prod3.html"
+			
+        }
+      }
+    })
+	.state('menu.tabs.prod4', {
+        url: "/prod4",
+      views: {
+          'list-tab': {
+            templateUrl: "prod4.html"
+        }
+      }
+    })
+	.state('menu.tabs.prod5', {
+        url: "/prod5",
+      views: {
+          'list-tab': {
+            templateUrl: "prod5.html"
+        }
+      }
+    })
+	.state('menu.tabs.prod6', {
+        url: "/prod6",
+      views: {
+          'list-tab': {
+            templateUrl: "prod6.html"
+        }
+      }
+    })
+	.state('menu.tabs.prod7', {
+        url: "/prod7",
+      views: {
+          'list-tab': {
+            templateUrl: "prod7.html"
+        }
+      }
+    })
+	.state('menu.tabs.prod8', {
+        url: "/prod8",
+      views: {
+          'list-tab': {
+            templateUrl: "prod8.html"
+        }
+      }
+    })
+	.state('menu.tabs.prod9', {
+        url: "/prod9",
+      views: {
+          'list-tab': {
+            templateUrl: "prod9.html"
         }
       }
     })

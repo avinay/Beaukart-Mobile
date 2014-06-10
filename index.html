@@ -183,6 +183,23 @@
 	border:2px solid #d35400;
 	box-shadow:0px 0px 1px 2px #f39c12;
 }
+.pord64{
+	width:64px;
+	float:left;
+	margin-right:10px;
+	height:64px;
+	overflow:hidden;
+}
+.pord64 img{
+	max-width:100%;
+}
+.lehengeslist .item-thumbnail-left{
+	padding-left:10px;
+}
+.proddesc h4{
+	color:#c0392b;
+	padding-left:10px;
+}
   </style>      
 </head>
 
@@ -263,10 +280,10 @@
             <a class="prodlink sareesimg"  href="#/menu/tab/list">Sarees</a>
         </div>
         <div class="prodblk">
-            <a class="prodlink lengasimg"  href="#/menu/tab/list">Lehenge</a>
+            <a class="prodlink lengasimg"  href="#/menu/tab/lehenges">Lehenge</a>
         </div>
         <div class="prodblk">
-            <a class="prodlink suitesimg"  href="#/menu/tab/list">Salwar Suits</a>
+            <a class="prodlink suitesimg"  href="#/menu/tab/salwars">Salwar Suits</a>
         </div>
         <div class="prodblk">
             <a class="prodlink kurtisimg"  href="#/menu/tab/list">Kurtis</a>
@@ -385,6 +402,99 @@
       </ion-content>
     </ion-view>
   </script>
+  
+  
+  <script id="lehenges.html" type="text/ng-template">
+    <ion-view title="Lehenges">
+      <ion-content class="padding bgimg lehengeslist">
+         <div class="list ">
+          <div class="item item-divider">
+           Sarees
+          </div> 
+      <div class="list">
+        <a name="listview" class="item item-thumbnail-left" href="#/menu/tab/lehengas1">
+          <div class="pord64">
+          <img src="images/prod7.png">
+		</div> 
+          <h2>Bollywood Lehenges</h2>
+          <p>Descrition for categories</p>
+       </a>
+     </div>
+      <div class="list">
+        <a class="item item-thumbnail-left" href="#/menu/tab/lehengas1">
+		<div class="pord64">
+          <img src="images/prod9.png">
+		</div> 
+          <h2>Designer Lehenges</h2>
+          <p>Descrition for categories</p>
+       </a>
+     </div>
+      <div class="list">
+        <a class="item item-thumbnail-left" href="#/menu/tab/lehengas1">
+          <div class="pord64">
+          <img src="images/prod11.png">
+		</div> 
+          <h2>Party Wear Lehenges</h2>
+          <p>Descrition for categories</p>
+       </a>
+     </div>
+      <div class="list">
+        <a class="item item-thumbnail-left" href="#/menu/tab/lehengas1">
+          <div class="pord64">
+          <img src="images/prod13.png">
+		</div> 
+          <h2>Wedding Lehenges</h2>
+          <p>Descrition for categories</p>
+       </a>
+     </div>
+
+
+        
+     
+
+      </ion-content>
+    </ion-view>
+  </script>
+  
+  <script id="salwars.html" type="text/ng-template">
+    <ion-view title="Salwar Suits">
+      <ion-content class="padding bgimg lehengeslist">
+         <div class="list ">
+          <div class="item item-divider">
+           Sarees
+          </div> 
+      <div class="list">
+        <a name="listview" class="item item-thumbnail-left" href="#/menu/tab/salwars1">
+          <div class="pord64">
+          <img src="images/prod15.jpg">
+		</div> 
+          <h2>Anarkali Salwar Suits</h2>
+          <p>Descrition for categories</p>
+       </a>
+     </div>
+      <div class="list">
+        <a class="item item-thumbnail-left" href="#/menu/tab/salwars1">
+		<div class="pord64">
+          <img src="images/prod17.jpg">
+		</div> 
+          <h2>Casual Wear Salwar Suits</h2>
+          <p>Descrition for categories</p>
+       </a>
+     </div>
+      <div class="list">
+        <a class="item item-thumbnail-left" href="#/menu/tab/salwars1">
+          <div class="pord64">
+          <img src="images/prod19.jpg">
+		</div> 
+          <h2>Bollywood Style Suits</h2>
+          <p>Descrition for categories</p>
+       </a>
+     </div>
+      
+
+      </ion-content>
+    </ion-view>
+  </script>
 
   <script id="prodlis.html" type="text/ng-template">
     <ion-view title="Products List">
@@ -419,6 +529,42 @@
 		  <div class="col"><a class="prodimg"  href="#/menu/tab/prod1"><img src="images/prod3.png" /></a></div>
 	  </div>
 	     
+      </ion-content>
+    </ion-view>
+  </script>
+  
+  
+  <script id="lehengas1.html" type="text/ng-template">
+    <ion-view title="Products List">
+      <ion-content class="padding bgimg">
+	  <div class="row">
+		  <div class="col"><a class="prodimg"  href="#/menu/tab/prod3"><img src="images/prod7.png" /></a></div>
+		  <div class="col"><a class="prodimg"  href="#/menu/tab/prod3"><img src="images/prod9.png" /></a></div>
+		  <div class="col"><a class="prodimg"  href="#/menu/tab/prod5"><img src="images/prod11.png" /></a></div>
+	  </div>
+	  <div class="row">
+		  <div class="col"><a class="prodimg"  href="#/menu/tab/prod4"><img src="images/prod13.png" /></a></div>
+		  <div class="col"><a class="prodimg"  href="#/menu/tab/prod3"><img src="images/prod7.png" /></a></div>
+		  <div class="col"><a class="prodimg"  href="#/menu/tab/prod4"><img src="images/prod9.png" /></a></div>
+	  </div>
+	 
+      </ion-content>
+    </ion-view>
+  </script>
+  <script id="salwars1.html" type="text/ng-template">
+    <ion-view title="Products List">
+      <ion-content class="padding bgimg">
+	  <div class="row">
+		  <div class="col"><a class="prodimg"  href="#/menu/tab/prod6"><img src="images/prod15.jpg" /></a></div>
+		  <div class="col"><a class="prodimg"  href="#/menu/tab/prod7"><img src="images/prod17.jpg" /></a></div>
+		  <div class="col"><a class="prodimg"  href="#/menu/tab/prod7"><img src="images/prod19.jpg" /></a></div>
+	  </div>
+	  <div class="row">
+		  <div class="col"><a class="prodimg"  href="#/menu/tab/prod6"><img src="images/prod16.jpg" /></a></div>
+		  <div class="col"><a class="prodimg"  href="#/menu/tab/prod7"><img src="images/prod18.jpg" /></a></div>
+		  <div class="col"><a class="prodimg"  href="#/menu/tab/prod7"><img src="images/prod19.jpg" /></a></div>
+	  </div>
+	 
       </ion-content>
     </ion-view>
   </script>
@@ -505,6 +651,200 @@
        </ion-content>    
     </ion-view>
   </script>
+  
+  
+  
+  <script id="prod3.html" type="text/ng-template">
+    <ion-view>
+      <ion-header-bar class="bar-positive">
+          <button class="button button-icon button-clear ion-navicon" ng-click="toggleLeft()"></button>
+          <h1 class="title">Rangmanch Designer Lehenga Choli</h1>
+      </ion-header-bar>
+      
+      <ion-content class="padding bgimg">
+        <ion-slide-box>
+          <ion-slide>
+            <div class="box">
+                <img src="images/prod7.png" />
+            </div>
+          </ion-slide>
+          <ion-slide>
+            <div class="box">
+                <img src="images/prod8.png" />
+            </div>
+          </ion-slide>
+          <ion-slide>
+            <div class="box">
+                <img src="images/prod10.png" />
+            </div>
+          </ion-slide>
+        </ion-slide-box>
+        <div class="list proddesc">
+          <div class="item item-divider">
+            <span class="input-label">Product Description</span>
+          </div>
+          <p>Georgette shaded Lehenga with Velvet blouse + Georgette Sleevs & Georgette Duppatta(With sentone inner)</p>
+		  <h4>INR6,471.00</h4>
+          <p><button class="button button-balanced">
+             Order Now!
+          </button></p>
+
+        </div>
+
+       </ion-content>    
+    </ion-view>
+  </script>
+  
+  
+  <script id="prod4.html" type="text/ng-template">
+    <ion-view>
+      <ion-header-bar class="bar-positive">
+          <button class="button button-icon button-clear ion-navicon" ng-click="toggleLeft()"></button>
+          <h1 class="title">Classy gold color lehenga choli</h1>
+      </ion-header-bar>
+      
+      <ion-content class="padding bgimg">
+        <ion-slide-box>
+          <ion-slide>
+            <div class="box">
+                <img src="images/prod11.png" />
+            </div>
+          </ion-slide>
+          <ion-slide>
+            <div class="box">
+                <img src="images/prod12.png" />
+            </div>
+          </ion-slide>
+        </ion-slide-box>
+        <div class="list proddesc">
+          <div class="item item-divider">
+            <span class="input-label">Product Description</span>
+          </div>
+          <p>Ravishing Attire To Enhance Your Beauty. Steal The Hearts Away With This Gold Color Net & Satin Lehnga Choli. The Patch Work, Resham & Velvet Patch Work On Attire Personifies The Entire Appearance.</p>
+		  <h4> INR13,999.00 </h4>
+          <p><button class="button button-balanced">
+             Order Now!
+          </button></p>
+
+        </div>
+
+       </ion-content>    
+    </ion-view>
+  </script>
+  
+  <script id="prod5.html" type="text/ng-template">
+    <ion-view>
+      <ion-header-bar class="bar-positive">
+          <button class="button button-icon button-clear ion-navicon" ng-click="toggleLeft()"></button>
+          <h1 class="title">Adorable bige brown net lehenga choli</h1>
+      </ion-header-bar>
+      
+      <ion-content class="padding bgimg">
+        <ion-slide-box>
+          <ion-slide>
+            <div class="box">
+                <img src="images/prod13.png" />
+            </div>
+          </ion-slide>
+          <ion-slide>
+            <div class="box">
+                <img src="images/prod14.png" />
+            </div>
+          </ion-slide>
+        </ion-slide-box>
+        <div class="list proddesc">
+          <div class="item item-divider">
+            <span class="input-label">Product Description</span>
+          </div>
+		  <p><strong>Adorable bige brown net lehenga choli</strong></p>
+          <p>Sensible Colors & Excellent Designs And Romantic Moods Are Reflected With An Alluring Style. An Outstanding Bige Brown Net Lehnga Choli Will Make You Look Very Stylish And Graceful. This Attire Is Showing Some Really Mesmerizing And Innovative Patterns Embroidered With Bead, Embroidery, Lace, Resham & Stones Work.</p>
+		  <h4> INR9,800.00 </h4>
+          <p><button class="button button-balanced">
+             Order Now!
+          </button></p>
+
+        </div>
+
+       </ion-content>    
+    </ion-view>
+  </script>
+  
+  
+   <script id="prod6.html" type="text/ng-template">
+    <ion-view>
+      <ion-header-bar class="bar-positive">
+          <button class="button button-icon button-clear ion-navicon" ng-click="toggleLeft()"></button>
+          <h1 class="title">Black Designer Sandhya Anarkali Suits</h1>
+      </ion-header-bar>
+      
+      <ion-content class="padding bgimg">
+        <ion-slide-box>
+          <ion-slide>
+            <div class="box">
+                <img src="images/prod15.jpg" />
+            </div>
+          </ion-slide>
+          <ion-slide>
+            <div class="box">
+                <img src="images/prod16.jpg" />
+            </div>
+          </ion-slide>
+        </ion-slide-box>
+        <div class="list proddesc">
+          <div class="item item-divider">
+            <span class="input-label">Product Description</span>
+          </div>
+		  <p><strong>Black Designer Sandhya Anarkali Suits</strong></p>
+          <p>Sensible Colors & Excellent Designs And Romantic Moods Are Reflected With An Alluring Style. An Outstanding Bige Brown Net Lehnga Choli Will Make You Look Very Stylish And Graceful. This Attire Is Showing Some Really Mesmerizing And Innovative Patterns Embroidered With Bead, Embroidery, Lace, Resham & Stones Work.</p>
+		  <h4>INR1,638.00</h4>
+          <p><button class="button button-balanced">
+             Order Now!
+          </button></p>
+
+        </div>
+
+       </ion-content>    
+    </ion-view>
+  </script>
+  
+  
+   <script id="prod7.html" type="text/ng-template">
+    <ion-view>
+      <ion-header-bar class="bar-positive">
+          <button class="button button-icon button-clear ion-navicon" ng-click="toggleLeft()"></button>
+          <h1 class="title">Yellow AV DESIGNER SUITS</h1>
+      </ion-header-bar>
+      
+      <ion-content class="padding bgimg">
+        <ion-slide-box>
+          <ion-slide>
+            <div class="box">
+                <img src="images/prod17.jpg" />
+            </div>
+          </ion-slide>
+          <ion-slide>
+            <div class="box">
+                <img src="images/prod18.jpg" />
+            </div>
+          </ion-slide>
+        </ion-slide-box>
+        <div class="list proddesc">
+          <div class="item item-divider">
+            <span class="input-label">Product Description</span>
+          </div>
+		  <p><strong>Yellow AV DESIGNER SUITS</strong></p>
+          <p>Sensible Colors & Excellent Designs And Romantic Moods Are Reflected With An Alluring Style. An Outstanding Bige Brown Net Lehnga Choli Will Make You Look Very Stylish And Graceful. This Attire Is Showing Some Really Mesmerizing And Innovative Patterns Embroidered With Bead, Embroidery, Lace, Resham & Stones Work.</p>
+		  <h4> INR2,238.00</h4>
+          <p><button class="button button-balanced">
+             Order Now!
+          </button></p>
+
+        </div>
+
+       </ion-content>    
+    </ion-view>
+  </script>
+  
   
   <script id="slidebox.html" type="text/ng-template">
     <ion-view>
